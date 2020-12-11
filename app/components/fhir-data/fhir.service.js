@@ -322,7 +322,7 @@ fb.service('fhirService', [
       return thisService.fhir.search({
         type: "Patient",
         query: {name: searchText},
-        headers: {'Cache-Control': 'no-cache'}
+        // headers: {'Cache-Control': 'no-cache'}
       })
         .then(function(response) {
           // process data for md-autocomplete
@@ -363,7 +363,7 @@ fb.service('fhirService', [
       return thisService.fhir.search({
         type: "Questionnaire",
         query: {title: searchText},
-        headers: {'Cache-Control': 'no-cache'}
+       // headers: {'Cache-Control': 'no-cache'}
       })
         .then(function(response) {
           // process data for md-autocomplete
@@ -413,7 +413,7 @@ fb.service('fhirService', [
         {
           type: resType,
           query: {_id: resId, _include: 'QuestionnaireResponse:questionnaire'},
-          headers: {'Cache-Control': 'no-cache'}
+         // headers: {'Cache-Control': 'no-cache'}
       })
         .then(function(response) {
           var result = {qResource: null, qrResource: null};
@@ -655,7 +655,7 @@ fb.service('fhirService', [
         thisService.fhir.search({
           type: "Questionnaire",
           query: queryJson,
-          headers: {'Cache-Control': 'no-cache'}
+         // headers: {'Cache-Control': 'no-cache'}
         }).then(function success(resp) {
           var bundle = resp.data;
           var count = (bundle.entry && bundle.entry.length) || 0;
@@ -735,7 +735,7 @@ fb.service('fhirService', [
             'derived-from': 'QuestionnaireResponse/'+resId,
           },
           headers: {
-            'Cache-Control': 'no-cache'
+         //   'Cache-Control': 'no-cache'
           }
         }).then(function(response) {   // response.data is a searchset bundle
           var thenPromise;
@@ -788,7 +788,7 @@ fb.service('fhirService', [
           'questionnaire': 'Questionnaire/'+resId,
         },
         headers: {
-          'Cache-Control': 'no-cache'
+        //  'Cache-Control': 'no-cache'
         }
       }).then(function(response) {   // response.data is a searchset bundle
         var thenPromise;
@@ -862,7 +862,7 @@ fb.service('fhirService', [
           _include: 'DiagnosticReport:result'
         },
         headers: {
-          'Cache-Control': 'no-cache'
+        //  'Cache-Control': 'no-cache'
         }
       })
         .then(function(response) {   // response.data is a searchset bundle
@@ -913,7 +913,7 @@ fb.service('fhirService', [
           _count: 5
         },
         headers: {
-          'Cache-Control': 'no-cache'
+        //  'Cache-Control': 'no-cache'
         }
       })
         .then(function(response) {   // response.data is a searchset bundle
@@ -959,7 +959,7 @@ fb.service('fhirService', [
           _count: 10
         },
         headers: {
-          'Cache-Control': 'no-cache'
+        //  'Cache-Control': 'no-cache'
         }
       })
         .then(function(response) {   // response.data is a searchset bundle
