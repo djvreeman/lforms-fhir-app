@@ -19,6 +19,14 @@ angular.module('lformsApp')
         //   ],
         //
         // }
+        { url: 'https://api.logicahealth.org/SDCTest/open',
+           //  smartServiceUrl: 'https://api.logicahealth.org/SDCTest/open',
+          featuredQuestionnaires: [
+            { name: 'Functional assessment standardized items (FASI) - version 1.0',
+                id: '94848-9',
+                code: '94848-9'}
+          ]
+        },
         { url: 'https://launch.smarthealthit.org/v/r3/fhir'},
         { url: 'https://lforms-fhir.nlm.nih.gov/baseDstu3'},
         { url: 'https://lforms-fhir.nlm.nih.gov/baseR4',
