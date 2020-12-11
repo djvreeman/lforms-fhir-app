@@ -321,7 +321,7 @@ fb.service('fhirService', [
       // md-autocomplete directive requires a promise to be returned
       return thisService.fhir.search({
         type: "Patient",
-        query: {name: searchText},
+        query: {name: searchText} //,
         // headers: {'Cache-Control': 'no-cache'}
       })
         .then(function(response) {
@@ -343,7 +343,7 @@ fb.service('fhirService', [
 
           // // it is actually not needed, since the returned list is handled directly in md-autocomplete
           // // use broadcasted event if the returned data needed to be handled in other controllers.
-          // $rootScope.$broadcast('LF_FHIR_PATIENT_LIST', patientList);
+          $rootScope.$broadcast('LF_FHIR_PATIENT_LIST', patientList);
 
           return patientList;
         }, function(error) {
@@ -362,7 +362,7 @@ fb.service('fhirService', [
       // md-autocomplete directive requires a promise to be returned
       return thisService.fhir.search({
         type: "Questionnaire",
-        query: {title: searchText},
+        query: {title: searchText} //,
        // headers: {'Cache-Control': 'no-cache'}
       })
         .then(function(response) {
@@ -412,7 +412,7 @@ fb.service('fhirService', [
       thisService.fhir.search(
         {
           type: resType,
-          query: {_id: resId, _include: 'QuestionnaireResponse:questionnaire'},
+          query: {_id: resId, _include: 'QuestionnaireResponse:questionnaire'} //,
          // headers: {'Cache-Control': 'no-cache'}
       })
         .then(function(response) {
@@ -654,7 +654,7 @@ fb.service('fhirService', [
       else {
         thisService.fhir.search({
           type: "Questionnaire",
-          query: queryJson,
+          query: queryJson //,
          // headers: {'Cache-Control': 'no-cache'}
         }).then(function success(resp) {
           var bundle = resp.data;
