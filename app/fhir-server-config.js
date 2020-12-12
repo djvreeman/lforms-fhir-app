@@ -19,8 +19,9 @@ angular.module('lformsApp')
         //   ],
         //
         // }
-        { smartServiceUrl: 'https://api.logicahealth.org/SDCTest/open',
-          featuredQuestionnaires: [
+        { url: 'https://api.logicahealth.org/SDCTest/open',
+          smartServiceUrl: 'https://api.logicahealth.org/SDCTest/open',
+                    featuredQuestionnaires: [
             { name: 'Functional assessment standardized items (FASI) - version 1.0',
                 id: '94848-9',
                 code: '94848-9'}
