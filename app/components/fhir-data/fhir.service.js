@@ -343,7 +343,7 @@ fb.service('fhirService', [
 
           // // it is actually not needed, since the returned list is handled directly in md-autocomplete
           // // use broadcasted event if the returned data needed to be handled in other controllers.
-          $rootScope.$broadcast('LF_FHIR_PATIENT_LIST', patientList);
+          // $rootScope.$broadcast('LF_FHIR_PATIENT_LIST', patientList);
 
           return patientList;
         }, function(error) {
