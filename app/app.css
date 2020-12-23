@@ -81,6 +81,7 @@ md-dialog-content {
 /* Styles for the header */
 body {
   margin: 0;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
 }
 #header {
   position: relative;
