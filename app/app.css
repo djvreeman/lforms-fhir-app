@@ -89,8 +89,8 @@ body {
   font-size: .8em;
   font-family: 'Open Sans',Arial,Helvetica,sans-serif;
   color: #E8F2FC;
-  border-top: 2px solid #0BACB6;
-  border-bottom: 7px solid #17b4e3;
+  border-top: 2px solid #458AC5;
+  border-bottom: 7px solid #458AC5;
   line-height: normal;
   padding-bottom: 22px;
 }
@@ -109,7 +109,7 @@ body {
   float: left;
   margin-right: 10px;
   margin-left: 20px;
-  border-right: 1px solid #0BACB6;
+  border-right: 1px solid #458AC5;
   padding-right: 0.75em;
   max-height: 50px;
 }
