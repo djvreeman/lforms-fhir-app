@@ -67,7 +67,7 @@ md-dialog-content {
 
 /* loading msg */
 .loading {
-  background-color: #458ac5;
+  background-color: #458AC5;
   color: white;
   font-size: 24px;
   height: 60%;
@@ -148,7 +148,9 @@ body {
 /* End of styles for the header */
 /* Styles for the footer */
 #fine-print {
-  border-top: 2px solid #0BACB6;
+  border-top: 2px solid #458AC5;
+  background-color: #202020;
+  color: #E8F2FC;
   clear: left;
   text-align: center;
   font-size: 12px;
