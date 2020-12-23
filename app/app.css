@@ -85,7 +85,7 @@ body {
 #header {
   position: relative;
   background-color: #202020;
-  font-size: 12px;
+  font-size: .8em;
   font-family: 'Open Sans',Arial,Helvetica,sans-serif;
   color: #E8F2FC;
   border-top: 2px solid #0BACB6;
@@ -134,7 +134,7 @@ body {
   left: 1px;
 }
 #siteNameBox {
-  margin-top: 2.2em;
+  /* margin-top: 2.2em; */
 }
 #siteName {
   font-size: 100%;
