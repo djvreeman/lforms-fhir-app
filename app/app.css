@@ -93,6 +93,7 @@ body {
   border-bottom: 7px solid #4cae4c;
   line-height: normal;
   padding-bottom: 22px;
+  min-height: fit-content;
 }
 #logo {
   position: relative;
@@ -109,7 +110,7 @@ body {
   float: left;
   margin-right: 10px;
   margin-left: 20px;
-  border-right: 1px solid #5cb85c;
+  /* border-right: 1px solid #5cb85c; */
   padding-right: 0.75em;
   max-height: 50px;
 }
