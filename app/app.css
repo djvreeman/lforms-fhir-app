@@ -67,7 +67,7 @@ md-dialog-content {
 
 /* loading msg */
 .loading {
-  background-color: #458ac5;
+  background-color: #458AC5;
   color: white;
   font-size: 24px;
   height: 60%;
@@ -78,59 +78,68 @@ md-dialog-content {
   padding: 25px;
 }
 
-/* Styles for the NIH/NLM/LHC logo */
-#lhc-logo {
-  background-color: #0BACB6;
-  padding: 2px 0 5px 5px;
-  overflow: hidden;
-}
-#lhc-logo img {
-  height: 35px;
-  width: auto;
-  margin-bottom: -1px;
-}
-/* End styles for the NIH/NLM/LHC logo */
-
 /* Styles for the header */
 body {
   margin: 0;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
 }
 #header {
   position: relative;
-  font-size: 12px;
-  font-family: 'Droid Sans',Arial,Helvetica,sans-serif;
-  color: #202020;
-  border-top: 2px solid #0BACB6;
-  border-bottom: 7px solid #17b4e3;
+  background-color: #202020;
+  font-size: .8em;
+  font-family: 'Open Sans',Arial,Helvetica,sans-serif;
+  color: #E8F2FC;
+  border-top: 2px solid #458AC5;
+  border-bottom: 7px solid #4cae4c;
   line-height: normal;
-  padding-bottom: 10px;
+  padding-bottom: 22px;
+  height: 70px;
 }
 #logo {
   position: relative;
-  top: 4px;
+  top: 5px;
   font-size: 18px;
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 #header a {
   color: #1E4193;
   text-decoration: none;
 }
-
 #logo img {
   float: left;
-  margin-right: 5px;
-  margin-left: 5px;
-  border-right: 1px solid #0BACB6;
-  padding-right: 5px;
+  margin-right: 10px;
+  margin-left: 20px;
+  /* border-right: 1px solid #5cb85c; */
+  padding-right: 0.75em;
+  max-height: 50px;
+}
+#logo, #log img {
   display: block;
 }
-
+#logo .site-name-slogan {
+  font-size: 14px;
+  position: relative;
+  top: 10px;
+  left: -2px;
+}
+#logo .site-name-slogan span {
+  display: block;
+  font-size: 14px;
+  position: relative;
+  left: -2px;
+}
+#logo .site-name-slogan .slogan {
+  color: #202020;
+  font-size: 12px;
+  position: relative;
+  left: 1px;
+}
 #siteNameBox {
-  margin-top: 2.2em;
+  /* margin-top: 2.2em; */
 }
 #siteName {
-  font-size: 300%;
+  font-size: 3em;
 }
 #version {
   float: right;
@@ -140,7 +149,7 @@ body {
 /* End of styles for the header */
 /* Styles for the footer */
 #fine-print {
-  border-top: 2px solid #0BACB6;
+  border-top: 2px solid #458AC5;
   clear: left;
   text-align: center;
   font-size: 12px;

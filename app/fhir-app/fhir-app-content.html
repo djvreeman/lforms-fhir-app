@@ -37,10 +37,8 @@
       <li><a href="#" class="" id="btn-save-sdc-qr-obs" ng-click="saveAsQRExtracted()"
        >FHIR QuestionnaireResponse (SDC) &amp; Observations</a></li>
       <!--<li><a href="#" class="" ng-click="saveAsToFhir('DR')">FHIR DiagnosticReport</a></li>-->
-      <li><a href="#" class="" id="btn-save-sdc-export" ng-click="saveAsQR()">FHIR QuestionnaireResponse (SDC) & other resources</a></li>
     </ul>
   </div>
-
   <div class="btn-group btn-group-sm" role="group" ng-if="formData">
     <button type="button" class="btn dropdown-toggle btn-primary"
      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -67,7 +65,6 @@
     </ul>
   </div>
 
-
   <div ng-if="initialLoad" class="" ng-include="'initial.html'"></div>
   <div ng-if="userMessages.error" class="error">{{userMessages.error}}</div>
   <div ng-if="userMessages.htmlError" class="error" ng-bind-html="userMessages.htmlError"></div>
@@ -80,7 +77,7 @@
   <!-- inline templates. these could be in template files too. -->
   <script type="text/ng-template" id="initial.html">
     <div class="loading initial">
-      <span>Please select a FHIR resource or upload from file.</span>
+      <span>To get started, choose a completed form or a fresh one to fill out.</span>
     </div>
   </script>
 
