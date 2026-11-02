@@ -1,0 +1,58 @@
+/* Overrides needed due to styles from lforms */
+/* A fix for this issue from lforms is being working on, so hopefully this is temporary. */
+
+.lf-content {
+  line-height: 1.42857143;  /* bootstrap 3 line height value */
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* LHC-Forms sets Arial on .lhc-form after this file loads. Repeat the class so
+   Open Sans still wins, matching the previous local theme. */
+.lhc-form.lhc-form,
+.lhc-form-overlay-container.lhc-form-overlay-container,
+#lhc-tools-searchResults {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.lhc-form input:focus,
+.lhc-form textarea:focus {
+  background-color: #FFF8C6;
+}
+
+.modal pre {
+  font-size: 13px;
+}
+
+#listAccordion .accordion-button a:hover {
+  color: inherit;
+}
+
+#listAccordion .accordion-body {
+  padding: 0;
+}
+
+.accordion-item:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+.accordion-header > .accordion-button > a,
+.accordion-header > .d-flex > .accordion-button > a{
+  color: #333;
+}
+
+.btn-group-justified {
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+a.list-group-item:hover {
+  color: #555;
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+
+/* End of overrides needed due to styles from lforms */
+

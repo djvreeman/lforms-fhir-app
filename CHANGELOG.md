@@ -3,6 +3,165 @@
 This log documents the significant changes for each release.
 This project follows [Semantic Versioning](http://semver.org/).
 
+## [3.6.5] 2026-07-14
+### Fixed
+- Removed the previously added additional styles. Used the style file
+  from the autocomplete-lhc package instead.
+  
+## [3.6.4] 2026-07-13
+### Fixed
+- Restored some base styles (font family, size and text color) that were
+  previously provided by LForms but are no longer included.
+### Changed
+- Made the off-list FHIR server test independent of external public FHIR
+  servers by stubbing the server's metadata and patient search responses.
+
+## [3.6.3] 2026-05-27
+### Fixed
+- "Show Questionnaire from FHIR Server" option did not show the
+  exact file from the server.
+
+## [3.6.2] 2026-04-06
+### Changed
+- Call LForms.Util.validateQuestionnaireOnFHIRServer() and show
+  validation errors from server when an error happens rendering
+  a Questionnaire.
+
+## [3.6.1] 2026-01-22
+### Changed
+- Updated a test to use a valid FHIR server.
+
+## [3.6.0] 2025-08-28
+### Changed
+- Save Bundles together with QuestionnaireResponse and Observations
+  to the FHIR server, to account for template-based extraction in LForms.
+
+## [3.5.2] 2025-07-25
+### Changed
+- Updated tests to work with changed DOM element IDs from the latest version
+  of LHC-Forms
+
+## [3.5.1] 2025-06-23
+### Changed
+- Update autocomplete-lhc version and use new ID lhc-tools-searchResults.
+
+## [3.5.0] 2025-04-08
+### Added
+- Checkboxes to show/hide repetition numbers, indentation and tree lines.
+
+## [3.4.3] 2025-03-28
+### Changed
+- Increased the width of bootstrap 5 modal dialogs.
+
+## [3.4.2] 2025-02-25
+### Fixed
+- Fixed a test that failed on a new version of lforms.
+
+## [3.4.1] 2025-02-24
+### Changed
+- Changed the FHIR version in the shown Questionnaire and QuestionnaireResponse
+  to be the FHIR version of the connected FHIR server. 
+- Added a R5 FHIR server in the FHIR server list.
+
+## [3.4.0] 2025-01-24
+### Changed
+- Upgraded to Bootstrap 5.
+
+## [3.3.4] 2024-12-13
+### Changed
+- Turned on the support for displaying HTML content on item.text, item.prefix
+  help and answer's text.
+
+## [3.3.3] 2024-12-03
+### Fixed
+- Escape certain characters in FHIR search parameters.
+
+## [3.3.2] 2024-06-28
+### Changed
+- Simplify lforms API calls when showing a saved questionnaire response.
+
+## [3.3.1] 2024-05-10
+### Added
+- Set subject and author when showing questionnaire response.
+
+## [3.3.0] 2024-03-25
+### Added
+- Scripts for Windows environment.
+
+## [3.2.0] 2024-02-27
+### Changed
+- updated lforms-loader version.
+
+## [3.1.0] 2023-08-22
+### Changed
+- Now loads and uses the latest LHC-Forms version automatically.
+
+## [3.0.3] 2023-05-10
+### Changed
+- Updated lforms to v33.3.4, which fixed a bug that values in
+  QuestionnaireResponse are not displayed when the values are
+  from answerValueSet in the Questionnaire.
+
+## [3.0.2] 2023-03-21
+### Changed
+- Updated nodejs to v18.14.2.
+- Updated lforms to v33.3.2.
+
+## [3.0.1] 2022-12-09
+### Changed
+- Updated website header and footer and logo.
+
+## [3.0.0] 2022-11-21
+### Changed
+- Updated lforms to 33.0.0, which removed support for IE 11.
+
+## [2.0.7] - 2022-11-08
+### Fixed
+- Issue with Cache-Control header: some FHIR servers do not permit the
+  Cache-Control header on CORS requests.
+
+## [2.0.6] - 2022-09-26
+### Fixed
+- Fixed the link to the 'samples' page.
+
+## [2.0.5] - 2022-09-12
+### Updated
+- LForms to 32.0.2.
+
+## [2.0.4] - 2022-08-10
+### Changed
+- Use shared header and footer from CTSS.
+
+## [2.0.3] - 2022-06-14
+### Updated
+- LForms to 30.3.0.
+
+## [2.0.2] - 2022-04-07
+### Fixed
+- LForms.lformsVersion was showing 'undefined' after the lforms update in 2.0.1.
+
+## [2.0.1] - 2022-04-07
+### Changed
+- Updated fhir-client.js to 2.4.0.
+- Updated lforms to 30.1.3.
+
+## [2.0.0] - 2022-01-07
+### Changed
+- Rewrite of app to remove AngularJs, which is no longer supported.
+- Updated to use the web component version of LForms (still in beta).
+
+## [1.3.1] - 2021-06-29
+### Fixed
+- Added a missing icon in production mode.
+
+## [1.3.0] - 2021-05-13
+### Added
+- Added the display of the pratitioner's name on the page
+
+## [1.2.4] - 2021-05-05
+### Changed
+- Updated lforms to 29.0.3
+
 ## [1.2.3] - 2021-04-06
 ### Changed
 - Updated NIH/NLM/LHC logo;
