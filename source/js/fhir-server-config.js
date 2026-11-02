@@ -18,6 +18,7 @@ export const fhirServerConfig = {
     //   ],
     //
     // }
+    { url: 'https://hl7-ips-server.hl7.org/fhir'},
     { url: 'https://api.logicahealth.org/SDCTest/open',
       smartServiceUrl: 'https://api.logicahealth.org/SDCTest/open',
       featuredQuestionnaires: [
