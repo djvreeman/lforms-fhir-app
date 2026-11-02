@@ -3,7 +3,20 @@
 
 .lf-content {
   line-height: 1.42857143;  /* bootstrap 3 line height value */
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* LHC-Forms sets Arial on .lhc-form after this file loads. Repeat the class so
+   Open Sans still wins, matching the previous local theme. */
+.lhc-form.lhc-form,
+.lhc-form-overlay-container.lhc-form-overlay-container,
+#lhc-tools-searchResults {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.lhc-form input:focus,
+.lhc-form textarea:focus {
+  background-color: #FFF8C6;
 }
 
 .modal pre {
